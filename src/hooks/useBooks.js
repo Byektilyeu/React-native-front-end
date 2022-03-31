@@ -23,7 +23,7 @@ export default (categoryId, searchServerValue) => {
 
     axios
       .get(
-        `http://10.0.0.105:8000/api/v1/categories/${categoryId}/books?limit=${limit}${search}`
+        `http://10.0.0.104:8000/api/v1/categories/${categoryId}/books?limit=${limit}${search}`
       )
       .then((result) => {
         console.log("nomnuudiig amjillttai huleej avlaa ");
