@@ -32,16 +32,8 @@ const HomeScreen = ({ navigation }) => {
           <Item
             title="Цэс"
             iconName="ios-menu"
-            onPress={() => alert("search")}
+            onPress={() => navigation.toggleDrawer()}
           />
-          {/* <OverflowMenu
-            style={{ marginHorizontal: 10 }}
-            OverflowIcon={({ color }) => (
-              <Ionicons name="ios-more" size={23} color={color} />
-            )}
-          >
-            <HiddenItem title="hidden1" onPress={() => alert("hidden1")} />
-          </OverflowMenu> */}
         </HeaderButtons>
       ),
     });

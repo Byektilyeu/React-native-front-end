@@ -9,7 +9,7 @@ export default (bookId) => {
   const loadBook = async () => {
     try {
       const result = await axios.get(
-        `http://10.0.0.104:8000/api/v1/books/${bookId}`
+        `http://10.0.0.109:8000/api/v1/books/${bookId}`
       );
       setBook(result.data.data);
       setError(null);

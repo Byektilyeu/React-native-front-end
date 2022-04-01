@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, Image } from "react-native";
+import { StyleSheet, Text, ScrollView, Button, Image } from "react-native";
 import React, { useLayoutEffect } from "react";
 // import { useHeaderHeight } from "@react-navigation/stack";
 import useBook from "../hooks/useBook";
@@ -41,7 +41,7 @@ const BookDetailScreen = (props) => {
   }
 
   return (
-    <View style={{ padding: 20 }}>
+    <ScrollView style={{ padding: 20 }}>
       <Image
         style={{ width: 300, height: 400, alignSelf: "center" }}
         source={{ uri: "https://data.internom.mn/media/images" + book.photo }}
@@ -51,7 +51,7 @@ const BookDetailScreen = (props) => {
       </Text>
       <Text>{book.content}</Text>
       <Button onPress={() => props.navigation.goBack()} title="Буцах" />
-    </View>
+    </ScrollView>
   );
 };
 

@@ -13,7 +13,7 @@ export default () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://10.0.0.104:8000/api/v1/categories")
+      .get("http://10.0.0.109:8000/api/v1/categories")
       .then((result) => {
         console.log("catergoriiig amjillttai huleej avlaa ");
         setCategories(result.data.data);
